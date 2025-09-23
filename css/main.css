@@ -1,0 +1,1458 @@
+@charset "utf-8";
+body {
+  background: #f8f8f8;
+}
+header {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.headerCenter {
+  width: 83.33%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h1Wrap h1 {
+  font-size: 2.4rem;
+}
+.openBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.burgerBar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+nav {
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #202020;
+}
+nav button {
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  background: #fff;
+  border-radius: 100%;
+  line-height: 30px;
+  border: none;
+  position: absolute;
+  right: 30px;
+  top: 12px;
+  transition: all 0.5s;
+}
+
+nav button:hover {
+  background: #14a941;
+  color: #fff;
+}
+.gnbWrap {
+  width: 83.33%;
+  text-align: center;
+  font-size: 3.4rem;
+  margin: 35% auto 0px auto;
+  padding: 75px 0 75px 0;
+  background: #fff;
+  border-radius: 10px;
+}
+.gnb {
+  height: auto;
+}
+.gnb li {
+  margin-bottom: 65px;
+}
+.gnb li:last-child {
+  margin-bottom: 0px;
+}
+.gnb li a {
+  transition: all 0.5s;
+}
+.gnb li a:hover {
+  color: #14a941;
+}
+.homeContainer {
+  width: 100%;
+}
+.homeWrap {
+  width: 83.33%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homeText {
+  font-size: 3.8rem;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+.homeText p {
+  margin-bottom: 10px;
+}
+.homeText p:last-child {
+  margin-bottom: 0px;
+}
+.homeIndex {
+  font-size: 2.4rem;
+}
+.homeIndex li {
+  margin-bottom: 30px;
+}
+.homeIndex li:last-child {
+  margin-bottom: 0px;
+}
+.homeIndex a {
+  display: inline-block;
+  width: 65px;
+  height: 35px;
+
+  background: #4a634d;
+  color: #fff;
+  line-height: 35px;
+  margin-left: 20px;
+}
+.homeIndex a:hover {
+  background-color: #263629;
+}
+.sectionLine {
+  width: 100%;
+  height: 5px;
+  background: #000;
+  margin-top: 130px;
+}
+#aboutMe {
+  margin-top: 50px;
+}
+.kitchenContainer {
+  width: 100%;
+}
+.kitchenWrap {
+  width: 83.33%;
+  margin: 0 auto;
+}
+.h2Wrap {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.h2Wrap h2 {
+  font-size: 4.2rem;
+}
+.meImg {
+  width: 232px;
+  height: 300px;
+  background: #d9d9d9;
+  margin: 0 auto 30px;
+}
+.imgName {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.imgName p:nth-child(1) {
+  margin-bottom: 10px;
+}
+.aboutMeContainer {
+  width: 100%;
+  margin-top: 100px;
+}
+.aboutMeGroup {
+  width: 83.33%;
+  margin: 0 auto;
+}
+.subh3Wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.subh3Wrap h3 {
+  font-size: 3.6rem;
+}
+.aboutMeText {
+  font-size: 2rem;
+  line-height: 35px;
+}
+.aboutMeText p {
+  margin-bottom: 30px;
+}
+.aboutMeText p:last-child {
+  margin-bottom: 0px;
+}
+#skill {
+  margin-top: 50px;
+}
+.ingredientContainer {
+  width: 100%;
+}
+.ingredientGroup {
+  width: 83.33%;
+  margin: 0 auto;
+}
+.ingredientText {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.originGroup {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.6rem;
+}
+.originGroup > p {
+  margin-bottom: 50px;
+}
+.starList li {
+  margin-bottom: 30px;
+}
+.starList li:last-child {
+  margin-bottom: 0px;
+}
+.skillContainer {
+  margin-top: 150px;
+}
+.skillGroup {
+  width: 83.33%;
+  margin: 0 auto;
+  text-align: left;
+}
+.nameOrigin {
+  margin-bottom: 30px;
+}
+.name {
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+}
+.explain p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+#projects {
+  margin-top: 50px;
+}
+.menuContainer {
+  width: 100%;
+}
+.menuGroup {
+  width: 83.33%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menuGroup > .h2Wrap {
+  margin-bottom: 50px;
+}
+.subh2 {
+  font-size: 2rem;
+}
+.dishGroup {
+  margin-top: 100px;
+}
+.preview {
+  width: 100%;
+  max-width: 300px;
+  height: 180px;
+  background: green;
+  margin: 0 auto 50px;
+  /* margin-bottom: 50px; */
+}
+.preview img {
+  width: 100%;
+  height: 100%;
+}
+.previewName {
+  font-size: 2.6rem;
+  margin-bottom: 60px;
+}
+.previewExplain {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.previewSpec {
+  font-size: 1.8rem;
+}
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+.spec {
+  display: block;
+  margin-bottom: 20px;
+}
+.projectContainer,
+.dessertContainer,
+.chefTableContainer {
+  margin-top: 150px;
+  width: 100%;
+}
+.projectGroup,
+.dessertGroup {
+  width: 83.33%;
+  margin: 0 auto;
+  text-align: center;
+}
+.chefTableContainer > .h2Wrap > h2 {
+  line-height: 1.3;
+}
+.contactGroup {
+  width: 83.33%;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 35px;
+}
+.contactGroup .h2Wrap p {
+  margin-top: 10px;
+}
+.reservation {
+  margin-top: 100px;
+}
+.reservationText {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.email,
+.number {
+  display: block;
+}
+.email {
+  margin-bottom: 50px;
+}
+.number {
+  margin-bottom: 50px;
+}
+/* 768px 시작 */
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  .headerContainer {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .headerCenter {
+    width: 86.98%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap h1 {
+    font-size: 3.2rem;
+  }
+  .openBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burgerBar {
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+  }
+
+  nav {
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #202020;
+  }
+  nav button {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    background: #fff;
+    border-radius: 100%;
+    line-height: 30px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    transition: all 0.5s;
+  }
+  .gnbWrap {
+    width: 86.98%;
+    text-align: center;
+    font-size: 3.4rem;
+    margin: 20% auto 0px auto;
+    padding: 100px 0 100px 0;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .gnb {
+    height: auto;
+  }
+  .gnb li {
+    margin-bottom: 80px;
+  }
+  .gnb li:last-child {
+    margin-bottom: 0px;
+  }
+  .gnb li a {
+    transition: all 0.5s;
+  }
+  .gnb li a:hover {
+    color: #14a941;
+  }
+  .homeContainer {
+    width: 100%;
+  }
+  .homeWrap {
+    width: 86.98%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .homeText {
+    font-size: 4.2rem;
+    margin-bottom: 100px;
+  }
+  .homeText p {
+    margin-bottom: 10px;
+  }
+  .homeText p:not(:first-child) {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .homeText p:last-child {
+    margin-bottom: 0px;
+  }
+  .homeIndex {
+    font-size: 3.2rem;
+  }
+  .homeIndex li {
+    margin-bottom: 55px;
+  }
+  .homeIndex li:last-child {
+    margin-bottom: 0px;
+  }
+  .homeIndex a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: #4a634d;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 20px;
+  }
+  .homeIndex a:hover {
+    background-color: #263629;
+  }
+  .sectionLine {
+    width: 100%;
+    height: 5px;
+    background: #000;
+    margin-top: 200px;
+  }
+  #aboutMe {
+    margin-top: 50px;
+  }
+  .kitchenContainer {
+    width: 100%;
+  }
+  .kitchenWrap {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .h2Wrap {
+    font-size: 4.2rem;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .meImg {
+    width: 324px;
+    height: 420px;
+    background: #d9d9d9;
+    margin: 0 auto 130px;
+  }
+  .imgName {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .imgName p:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .imgName p {
+    display: inline-block;
+  }
+  .aboutMeContainer {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .aboutMeGroup {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .subh3Wrap {
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .aboutMeText {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .aboutMeText p {
+    margin-bottom: 30px;
+  }
+  .aboutMeText p:last-child {
+    margin-bottom: 0px;
+  }
+  #skill {
+    margin-top: 50px;
+  }
+  .ingredientContainer {
+    width: 100%;
+  }
+  .ingredientGroup {
+    width: 86.98%;
+    margin: 0 auto;
+  }
+  .ingredientText {
+    width: 496px;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .originGroup {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 2.8rem;
+  }
+  .originGroup > p {
+    margin-bottom: 75px;
+  }
+  .starList li {
+    margin-bottom: 30px;
+  }
+  .starList li:last-child {
+    margin-bottom: 0px;
+  }
+  .skillContainer {
+    margin-top: 150px;
+  }
+  .skillGroup {
+    width: 86.98%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .nameOrigin {
+    width: 75%;
+    margin: 0 auto 50px;
+  }
+  .name {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+  }
+  .explain p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  #projects {
+    margin-top: 50px;
+  }
+  .menuContainer {
+    width: 100%;
+  }
+  .menuGroup {
+    width: 86.98%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .menuGroup > .h2Wrap {
+    margin-bottom: 50px;
+  }
+  .subh2 {
+    font-size: 2.2rem;
+  }
+  .dishGroup {
+    margin-top: 100px;
+  }
+  .preview {
+    width: 100%;
+    max-width: 496px;
+    height: 298px;
+    background: green;
+    margin: 0 auto 50px;
+  }
+  .preview img {
+    width: 100%;
+    height: 100%;
+  }
+  .previewName {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+  }
+  .previewExplain {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .previewSpec {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .label {
+    display: inline;
+    margin-bottom: 5px;
+  }
+  .spec {
+    display: inline;
+    margin-bottom: 20px;
+  }
+  .projectContainer,
+  .dessertContainer,
+  .chefTableContainer {
+    margin-top: 150px;
+    width: 100%;
+  }
+  .projectGroup,
+  .dessertGroup {
+    width: 86.98%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .chefTableContainer > .h2Wrap > h2 {
+    line-height: 1.3;
+  }
+  .contactGroup {
+    width: 86.98%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 35px;
+  }
+  .contactText {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .reservation {
+    margin-top: 100px;
+  }
+  .reservationText {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+  }
+  .email,
+  .number {
+    display: block;
+  }
+  .email {
+    margin-bottom: 50px;
+  }
+  .number {
+    margin-bottom: 50px;
+  }
+}
+/* 1024px 시작 */
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  .headerContainer {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .headerCenter {
+    width: 88.28%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap {
+    width: 45%;
+  }
+  .h1Wrap h1 {
+    font-size: 3.2rem;
+  }
+  .openBtn {
+    display: none;
+  }
+  nav {
+    position: relative;
+    right: 0%;
+    width: 100%;
+    height: auto;
+    background: #d9d9d9;
+  }
+  nav button {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    background: #fff;
+    border-radius: 100%;
+    line-height: 30px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    transition: all 0.5s;
+    display: none;
+  }
+  .gnbWrap {
+    width: 100%;
+    text-align: center;
+    font-size: 3.4rem;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 0px;
+  }
+  .gnb {
+    height: auto;
+    display: flex;
+  }
+  .gnb li {
+    width: 20%;
+    margin-bottom: 0px;
+  }
+  .gnb li:last-child {
+    margin-bottom: 0px;
+  }
+  .gnb li a {
+    transition: all 0.5s;
+  }
+  .gnb li a:hover {
+    color: #14a941;
+  }
+  .gnb li a span {
+    display: none;
+  }
+
+  .homeContainer {
+    width: 100%;
+  }
+  .homeWrap {
+    width: 88.28%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .homeText {
+    font-size: 5.2rem;
+    margin-bottom: 100px;
+  }
+  .homeText p {
+    margin-bottom: 10px;
+  }
+  .homeText p:not(:first-child) {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .homeText p:last-child {
+    margin-bottom: 0px;
+  }
+  .homeIndex {
+    width: 50%;
+    margin: 0 auto 50px;
+    font-size: 4.2rem;
+  }
+  .homeIndex li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
+  .homeIndex li:last-child {
+    margin-bottom: 0;
+  }
+
+  .homeIndex a {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background: #4a634d;
+    color: #fff;
+    line-height: 60px;
+    position: relative;
+    margin-left: 40px;
+  }
+  .homeIndex a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 3px;
+    margin-right: 25px;
+    height: 100%;
+    background: #333;
+  }
+
+  .homeIndex a:hover {
+    background-color: #263629;
+  }
+
+  .sectionLine {
+    width: 100%;
+    height: 5px;
+    background: #000;
+    margin-top: 200px;
+    display: none;
+  }
+
+  #aboutMe {
+    margin-top: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .centerLine {
+    width: 5px;
+    background: #000;
+  }
+  .kitchenContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .kitchenWrap {
+    width: 76.37%;
+    margin: 0 auto;
+  }
+  .h2Wrap {
+    font-size: 5.2rem;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .meImg {
+    width: 324px;
+    height: 420px;
+    background: #d9d9d9;
+    margin: 0 auto 130px;
+  }
+  .imgName {
+    font-size: 4.2rem;
+    text-align: center;
+  }
+  .imgName p:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .imgName p {
+    display: inline-block;
+  }
+  .aboutMeContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .aboutMeGroup {
+    width: 76.37%;
+    margin: 0 auto;
+  }
+  .subh3Wrap {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .subh3Wrap h3 {
+    font-size: 4.2rem;
+  }
+  .aboutMeText {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .aboutMeText p {
+    margin-bottom: 50px;
+  }
+  .aboutMeText p:last-child {
+    margin-bottom: 0px;
+  }
+  #skill {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ingredientContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .ingredientGroup {
+    width: 76.37%;
+    margin: 0 auto;
+  }
+  .ingredientGroup > .h2Wrap {
+    margin-bottom: 50px;
+  }
+  .ingredientText {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .originGroup {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.8rem;
+  }
+  .originGroup > p {
+    margin-bottom: 50px;
+  }
+  .starList li {
+    margin-bottom: 50px;
+  }
+  .starList li:last-child {
+    margin-bottom: 0px;
+  }
+  .skillContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .skillContainer .subh3Wrap {
+    margin-bottom: 50px;
+  }
+  .skillGroup {
+    width: 76.37%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .nameOrigin {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .name {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+  }
+  .explain p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .skillContainer > .rightBtnGroup {
+    justify-content: flex-end;
+  }
+  #projects {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .menuGroup {
+    width: 76.37%;
+    margin: 0 auto;
+  }
+  .menuGroup > .h2Wrap {
+    margin-bottom: 50px;
+  }
+  .subh2 {
+    font-size: 2.2rem;
+  }
+  .dishGroup {
+    margin-top: 30px;
+  }
+  .preview {
+    width: 100%;
+    max-width: 496px;
+    height: 298px;
+    background: green;
+    margin: 0 auto 20px;
+    /* margin-bottom: 50px; */
+  }
+  .preview img {
+    width: 100%;
+    height: 100%;
+  }
+  .previewName {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+  }
+  .previewExplain {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .previewSpec {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .label {
+    display: inline;
+    margin-bottom: 5px;
+  }
+  .spec {
+    display: inline;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .projectContainer,
+  .dessertContainer,
+  .chefTableContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .projectContainer > .rightBtnGroup {
+    justify-content: flex-end;
+  }
+  .projectGroup,
+  .dessertGroup {
+    width: 76.37%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projectGroup > .subh3Wrap,
+  .dessertGroup > .subh3Wrap {
+    margin-bottom: 50px;
+  }
+
+  .chefTableContainer > .contactGroup > .h2Wrap {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .chefTableContainer > .h2Wrap > h2 {
+    line-height: 1.3;
+  }
+  #contact {
+    margin-top: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  .contactGroup {
+    width: 76.37%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 35px;
+  }
+  .contactText {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .reservation {
+    margin-top: 100px;
+  }
+  .reservationText {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+  }
+  .email,
+  .number {
+    display: block;
+  }
+  .email {
+    margin-bottom: 50px;
+  }
+  .number {
+    margin-bottom: 50px;
+  }
+}
+/* 1700px 시작 */
+@media screen and (min-width: 1700px) {
+  header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  .headerContainer {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .headerCenter {
+    width: 83.33%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h1Wrap {
+    width: 45%;
+  }
+  .h1Wrap h1 {
+    font-size: 4rem;
+  }
+  .openBtn {
+    display: none;
+  }
+  nav {
+    position: relative;
+    right: 0%;
+    width: 100%;
+    height: auto;
+    background: #d9d9d9;
+  }
+  nav button {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    background: #fff;
+    border-radius: 100%;
+    line-height: 30px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    transition: all 0.5s;
+    display: none;
+  }
+  .gnbWrap {
+    width: 100%;
+    text-align: center;
+    font-size: 3.6rem;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 0px;
+  }
+  .gnb {
+    height: auto;
+    display: flex;
+  }
+  .gnb li {
+    width: 20%;
+    margin-bottom: 0px;
+  }
+  .gnb li:last-child {
+    margin-bottom: 0px;
+  }
+  .gnb li a {
+    transition: all 0.5s;
+  }
+  .gnb li a:hover {
+    color: #14a941;
+  }
+  .gnb li a span {
+    display: none;
+  }
+
+  .homeContainer {
+    width: 100%;
+  }
+  .homeWrap {
+    width: 83.33%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .homeText {
+    font-size: 6.2rem;
+    margin-bottom: 100px;
+  }
+  .homeText p {
+    margin-bottom: 10px;
+  }
+  .homeText p:not(:first-child) {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .homeText p:last-child {
+    margin-bottom: 0px;
+  }
+  .homeIndex {
+    width: 50%;
+    margin: 0 auto 50px;
+    font-size: 4.2rem;
+  }
+  .homeIndex li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
+  .homeIndex li:last-child {
+    margin-bottom: 0;
+  }
+
+  .homeIndex a {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background: #4a634d;
+    color: #fff;
+    line-height: 60px;
+    position: relative;
+    margin-left: 40px;
+  }
+  .homeIndex a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 3px;
+    margin-right: 25px;
+    height: 100%;
+    background: #333;
+  }
+
+  .homeIndex a:hover {
+    background-color: #263629;
+  }
+
+  .sectionLine {
+    width: 100%;
+    height: 5px;
+    background: #000;
+    margin-top: 200px;
+    display: none;
+  }
+
+  #aboutMe {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .centerLine {
+    width: 5px;
+    background: #000;
+  }
+  .kitchenContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .kitchenWrap {
+    width: 66.67%;
+    margin: 0 auto;
+  }
+  .h2Wrap > h2 {
+    font-size: 6.2rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .meImg {
+    width: 456px;
+    height: 590px;
+    background: #d9d9d9;
+    margin: 0 auto 50px;
+  }
+  .imgName {
+    font-size: 4.2rem;
+    text-align: center;
+  }
+  .imgName p:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .imgName p {
+    display: inline-block;
+  }
+  .aboutMeContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .aboutMeGroup {
+    width: 66.67%;
+    margin: 0 auto;
+  }
+  .subh3Wrap {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .subh3Wrap > h3 {
+    font-size: 6.2rem;
+  }
+  .aboutMeText {
+    font-size: 2.6rem;
+    line-height: 35px;
+  }
+  .aboutMeText p {
+    margin-bottom: 50px;
+  }
+  .aboutMeText p:last-child {
+    margin-bottom: 0px;
+  }
+  .aboutMeContainer > .rightBtnGroup {
+    justify-content: flex-end;
+  }
+  #skill {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ingredientContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .ingredientGroup {
+    width: 66.67%;
+    margin: 0 auto;
+  }
+  .ingredientGroup > .h2Wrap {
+    margin-bottom: 50px;
+  }
+  .ingredientText {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .originGroup {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.8rem;
+  }
+  .originGroup > p {
+    margin-bottom: 50px;
+  }
+  .starList li {
+    margin-bottom: 50px;
+  }
+  .starList li:last-child {
+    margin-bottom: 0px;
+  }
+  .skillContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .skillContainer .subh3Wrap {
+    margin-bottom: 100px;
+  }
+  .skillGroup {
+    width: 66.67%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .nameOrigin {
+    width: 75%;
+    margin: 0 auto 35px;
+  }
+  .name {
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+  .explain p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  #projects {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuContainer {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .menuGroup {
+    width: 66.67%;
+    margin: 0 auto;
+  }
+  .menuGroup > .h2Wrap {
+    margin-bottom: 30px;
+  }
+  .subh2 {
+    font-size: 2.2rem;
+  }
+  .dishGroup {
+    margin-top: 30px;
+  }
+  .preview {
+    width: 100%;
+    max-width: 496px;
+    height: 298px;
+    background: green;
+    margin: 0 auto 20px;
+    /* margin-bottom: 50px; */
+  }
+  .preview img {
+    width: 100%;
+    height: 100%;
+  }
+  .previewName {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+  }
+  .previewExplain {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .previewSpec {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .label {
+    display: inline;
+    margin-bottom: 5px;
+  }
+  .spec {
+    display: inline;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .projectContainer,
+  .dessertContainer,
+  .chefTableContainer {
+    width: 50%;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .projectContainer > .rightBtnGroup {
+    justify-content: flex-end;
+  }
+  .projectGroup,
+  .dessertGroup {
+    width: 76.37%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projectGroup > .subh3Wrap,
+  .dessertGroup > .subh3Wrap {
+    margin-bottom: 50px;
+  }
+  .chefTableContainer > .contactGroup > .h2Wrap {
+    width: 100%;
+    margin: 0 auto 50px;
+    line-height: 1;
+  }
+  #contact {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactGroup {
+    width: 66.67%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 35px;
+  }
+  .contactText {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .reservation {
+    margin-top: 100px;
+  }
+  .reservationText {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+  }
+  .email,
+  .number {
+    display: block;
+  }
+  .email {
+    margin-bottom: 50px;
+  }
+  .number {
+    margin-bottom: 0px;
+  }
+}
