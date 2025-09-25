@@ -1,12 +1,14 @@
 @charset "utf-8";
-body {
-  background: #f8f8f8;
-}
+
 header {
   width: 100%;
   height: 50px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
 }
+
 .headerContainer {
   width: 100%;
   height: 100%;
@@ -22,6 +24,7 @@ header {
 }
 .h1Wrap h1 {
   font-size: 2.4rem;
+  font-family: "Montserrat", "Pretendard";
 }
 .openBtn {
   display: flex;
@@ -36,11 +39,12 @@ header {
 }
 nav {
   position: fixed;
-  right: -100%;
+  top: 0;
   width: 100%;
   height: 100%;
-  top: 0;
+  left: -100%;
   background: #202020;
+  z-index: 5;
 }
 nav button {
   width: 50px;
@@ -79,7 +83,7 @@ nav button:hover {
   margin-bottom: 0px;
 }
 .gnb li a {
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .gnb li a:hover {
   color: #14a941;
@@ -97,6 +101,7 @@ nav button:hover {
   font-size: 3.8rem;
   margin-top: 100px;
   margin-bottom: 75px;
+  font-family: "Montserrat", "Pretendard";
 }
 .homeText p {
   margin-bottom: 10px;
@@ -105,23 +110,38 @@ nav button:hover {
   margin-bottom: 0px;
 }
 .homeIndex {
+  width: 75%;
+  margin: 0 auto;
   font-size: 2.4rem;
 }
 .homeIndex li {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
+  font-family: "Montserrat", "Pretendard";
+  line-height: 35px;
 }
 .homeIndex li:last-child {
   margin-bottom: 0px;
 }
 .homeIndex a {
   display: inline-block;
-  width: 65px;
+  width: 80px;
   height: 35px;
-
   background: #4a634d;
   color: #fff;
   line-height: 35px;
-  margin-left: 20px;
+  margin-left: 30px;
+  position: relative;
+}
+.homeIndex a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 3px;
+  height: 100%;
+  background: #333;
 }
 .homeIndex a:hover {
   background-color: #263629;
@@ -153,7 +173,7 @@ nav button:hover {
   width: 232px;
   height: 300px;
   background: #d9d9d9;
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
 }
 .imgName {
   font-size: 3.2rem;
@@ -161,6 +181,9 @@ nav button:hover {
 }
 .imgName p:nth-child(1) {
   margin-bottom: 10px;
+}
+.imgName p:nth-child(2) {
+  font-family: "Montserrat", "Pretendard";
 }
 .aboutMeContainer {
   width: 100%;
@@ -231,6 +254,9 @@ nav button:hover {
   margin-bottom: 20px;
   font-size: 2.6rem;
 }
+.name > span:nth-child(1) {
+  font-family: "Montserrat", "Pretendard";
+}
 .explain p {
   font-size: 1.8rem;
   line-height: 1.3;
@@ -251,7 +277,9 @@ nav button:hover {
 }
 .subh2 {
   font-size: 2rem;
+  font-family: "Montserrat", "Pretendard";
 }
+
 .dishGroup {
   margin-top: 100px;
 }
@@ -280,11 +308,13 @@ nav button:hover {
 }
 .label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Pretendard";
 }
 .spec {
   display: block;
   margin-bottom: 20px;
+  font-family: "Montserrat", "Pretendard";
 }
 .projectContainer,
 .dessertContainer,
@@ -308,6 +338,9 @@ nav button:hover {
   text-align: center;
   line-height: 35px;
 }
+.contactText {
+  font-family: "Montserrat", "Pretendard";
+}
 .contactGroup .h2Wrap p {
   margin-top: 10px;
 }
@@ -321,12 +354,22 @@ nav button:hover {
 .email,
 .number {
   display: block;
+  font-style: normal;
 }
 .email {
   margin-bottom: 50px;
 }
 .number {
   margin-bottom: 50px;
+}
+.footerBox {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #000;
+  padding: 50px 0 50px 0;
+}
+.footerBox span {
+  font-size: 1.4rem;
 }
 /* 768px 시작 */
 @media screen and (min-width: 768px) {
@@ -431,17 +474,21 @@ nav button:hover {
     margin-bottom: 0px;
   }
   .homeIndex {
+    width: 70%;
+    margin: 0 auto;
     font-size: 3.2rem;
   }
   .homeIndex li {
     margin-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
   }
   .homeIndex li:last-child {
     margin-bottom: 0px;
   }
   .homeIndex a {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 40px;
     background: #4a634d;
     color: #fff;
@@ -601,6 +648,7 @@ nav button:hover {
     font-size: 2.2rem;
     margin-bottom: 30px;
   }
+
   .previewSpec {
     font-size: 2rem;
     margin-bottom: 30px;
@@ -608,6 +656,7 @@ nav button:hover {
   .label {
     display: inline;
     margin-bottom: 5px;
+    margin-right: 10px;
   }
   .spec {
     display: inline;
@@ -634,6 +683,9 @@ nav button:hover {
     font-size: 2.2rem;
     text-align: center;
     line-height: 35px;
+  }
+  .contactGroup > .h2Wrap {
+    line-height: 1.2;
   }
   .contactText {
     width: 70%;
@@ -680,7 +732,7 @@ nav button:hover {
     align-items: center;
   }
   .h1Wrap {
-    width: 45%;
+    width: 70%;
   }
   .h1Wrap h1 {
     font-size: 3.2rem;
@@ -712,7 +764,7 @@ nav button:hover {
   .gnbWrap {
     width: 100%;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 3rem;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -762,14 +814,17 @@ nav button:hover {
     margin-bottom: 0px;
   }
   .homeIndex {
-    width: 50%;
+    width: 60%;
     margin: 0 auto 50px;
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
   .homeIndex li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
+  }
+  .homeIndex li > span {
+    line-height: 60px;
   }
   .homeIndex li:last-child {
     margin-bottom: 0;
@@ -986,8 +1041,9 @@ nav button:hover {
     margin-bottom: 30px;
   }
   .label {
-    display: inline;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 15px;
+    margin-right: 0;
   }
   .spec {
     display: inline;
