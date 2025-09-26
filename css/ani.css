@@ -18,20 +18,11 @@
   opacity: 1;
 }
 
-.homeIndex li {
-  transform: translateX(-20px);
-  opacity: 0;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-}
-.homeIndex li.slideInLeft {
-  transform: translateX(0);
-  opacity: 1;
-}
-#aboutMe .h2Wrap h2 {
+.h2Wrap h2 {
   position: relative;
 }
 
-#aboutMe .h2Wrap h2::after {
+.h2Wrap h2::after {
   content: "";
   position: absolute;
   bottom: -6px;
@@ -44,25 +35,50 @@
   transition: transform 0.6s ease;
 }
 
-#aboutMe .h2Wrap h2.showUnderLine::after {
+.h2Wrap h2.showUnderLine::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-.meImg {
-  transform: translateY(20px);
-  opacity: 0;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-}
 .imgName {
   transform: translateY(20px);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
-.slideInBottom {
-  transform: translateY(0);
+.subh3Wrap h3 {
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  transition: clip-path 0.8s ease, opacity 0.4s ease;
+  will-change: clip-path;
+}
+
+.subh3Wrap h3.clipShow {
+  clip-path: inset(0 0 0 0);
   opacity: 1;
 }
-.slideInLeft {
-  transform: translateX(0);
+
+/* 공통 css 애나메이션 초기상태*/
+.leftSlide {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.rightSlide {
+  transform: translateX(20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.topSlide {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.bottomtSlide {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+/* 애니메이션 후 상태 */
+.slideShow {
+  transform: translate(0, 0);
   opacity: 1;
 }

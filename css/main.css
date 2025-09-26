@@ -272,12 +272,14 @@ nav button:hover {
   margin: 0 auto;
   text-align: center;
 }
-.menuGroup > .h2Wrap {
-  margin-bottom: 50px;
+.menuContainer > .h2Wrap {
+  width: 83.33%;
+  margin: 0 auto 100px;
 }
 .subh2 {
   font-size: 2rem;
   font-family: "Montserrat", "Pretendard";
+  text-align: center;
 }
 
 .dishGroup {
@@ -305,6 +307,9 @@ nav button:hover {
 }
 .previewSpec {
   font-size: 1.8rem;
+}
+.previewSpec:last-child {
+  padding-bottom: 20px;
 }
 .label {
   display: block;
@@ -371,6 +376,11 @@ nav button:hover {
 .footerBox span {
   font-size: 1.4rem;
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: #14a941;
+}
+
 /* 768px 시작 */
 @media screen and (min-width: 768px) {
   header {
@@ -620,9 +630,11 @@ nav button:hover {
     margin: 0 auto;
     text-align: center;
   }
-  .menuGroup > .h2Wrap {
-    margin-bottom: 50px;
+  .menuContainer > .h2Wrap {
+    width: 86.98%;
+    margin: 0 auto 100px;
   }
+
   .subh2 {
     font-size: 2.2rem;
   }
@@ -742,7 +754,7 @@ nav button:hover {
   }
   nav {
     position: relative;
-    right: 0%;
+    left: 0%;
     width: 100%;
     height: auto;
     background: #d9d9d9;
@@ -1148,7 +1160,7 @@ nav button:hover {
   }
   nav {
     position: relative;
-    right: 0%;
+    left: 0%;
     width: 100%;
     height: auto;
     background: #d9d9d9;
