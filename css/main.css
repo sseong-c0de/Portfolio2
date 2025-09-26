@@ -1248,10 +1248,10 @@ nav button:hover {
   .homeIndex a {
     display: inline-block;
     width: 140px;
-    height: 70px;
+    height: 60px;
     background: #4a634d;
     color: #fff;
-    line-height: 70px;
+    line-height: 60px;
     position: relative;
     margin-left: 40px;
   }
