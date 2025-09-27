@@ -237,7 +237,10 @@ $(function () {
     loop: true, // 무한 반복
     slidesPerView: 1, // 한 화면에 보여줄 슬라이드 개수
     spaceBetween: 20, // 간격(px)
-
+    autoplay: {
+      delay: 4500, // 2.5초마다 자동 전환
+      disableOnInteraction: true,
+    },
     // 페이지네이션
     pagination: {
       el: ".swiper-pagination",
